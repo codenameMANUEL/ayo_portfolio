@@ -3,14 +3,16 @@
 const Projects = () => {
     return (
         <>
-            <div className="relative flex items-center justify-center h-56">
-                <h2 className="text-7xl sm:text-8xl font-extrabold text-gray-200 absolute">
-                    Some Projects
-                </h2>
-                <p className="text-xl sm:text-2xl font-semibold text-gray-900 z-10">
-                    Know me More
-                </p>
-            </div>
+            <div className="relative flex items-center justify-start py-12 px-4 sm:px-8">
+        <div className="relative inline-block">
+          <h2 className="text-7xl sm:text-8xl font-extrabold text-gray-200">
+            Projects
+          </h2>
+          <p className="text-xl sm:text-2xl font-semibold text-gray-900 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            Know me More
+          </p>
+        </div>
+      </div>
         </>
     )
 }
