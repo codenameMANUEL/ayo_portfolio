@@ -121,7 +121,7 @@ const Hero = () => {
         </h1>
         <div className="px-4 sm:px-8">
           <h1 className="text-[8vw] sm:text-9xl md:text-xl lg:text-8xl xl:text-9xl font-extrabold leading-tight mb-20">
-            I am David Ayo<span className="text-pink-500">.</span>
+            I am David Ayo<span className="text-pink-500 square-dot">.</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-1xl sm:mt-6 text-start">
             Securing systems since 2011 <br />

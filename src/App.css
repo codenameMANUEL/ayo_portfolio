@@ -1,0 +1,42 @@
+/* App.css (if not using Tailwind) */
+.message-form {
+  width: 100%;
+  max-width: 28rem; /* 448px */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db; /* Gray-300 */
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  outline: none;
+  border-color: #ec4899; /* Pink-500 */
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
+}
+
+.message-form button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #ec4899; /* Pink-500 */
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.message-form button:hover {
+  background-color: #db2777; /* Pink-600 */
+  transform: scale(1.05);
+}
