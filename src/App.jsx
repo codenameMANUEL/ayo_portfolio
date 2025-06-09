@@ -3,7 +3,8 @@ import Hero from './Hero'
 import About from './About'
 import Project from "./Projects"
 import Contact from './Contact'
-// import Dashboard from './Certificate'
+import Certificate from './Certificate'
+import Footer from './Footer'
 
 function App() {
 
@@ -12,8 +13,9 @@ function App() {
       <Hero/>
       <About/>
       <Project/>
+      <Certificate/>
       <Contact/>
-      {/* <Dashboard/> */}
+      <Footer/>
     </>
   )
 }
