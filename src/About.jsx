@@ -59,7 +59,7 @@ const About = () => {
           Download CV
         </a>
       </div>
-      <div className="border-b border-gray-400 w-11/12 mx-auto pt-18"></div>
+      <div className="border-b border-gray-300 w-11/12 mx-auto pt-18"></div>
     </>
   );
 };

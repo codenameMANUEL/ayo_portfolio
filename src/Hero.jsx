@@ -124,8 +124,8 @@ const Hero = () => {
             I am David Ayo<span className="text-pink-500 square-dot">.</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-1xl sm:mt-6 text-start">
-            Securing systems since 2011 <br />
-            Currently, Global Head of Cybersecurity at Rappi
+            Securing systems since 2018 <br />
+            Currently, Security Delivery Specialist at Accenture
           </p>
         </div>
       </div>
