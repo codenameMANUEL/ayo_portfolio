@@ -21,7 +21,9 @@ const Projects = () => {
         </div>
 
         <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
-          <h1 className="text-2xl font-semibold mb-2">Security Engineering</h1>
+          <h1 className="text-2xl font-semibold mb-2">
+            Threat detection Engineer
+          </h1>
           <h2 className="text-lg font-semibold mb-4">Wazuh Inc.</h2>
         </div>
 
