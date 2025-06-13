@@ -42,12 +42,7 @@ const About = () => {
         </div>
       </div>
       <p className="sm:text-xl md:text-1xl sm:mt-0 px-4 sm:px-8 text-start">
-        Cybersecurity specialist focused on threat-driven defense and continuous
-        security improvement. I take a hands on, ground up approach to learning
-        and solving challenges. My skill set spans threat hunting, detection
-        engineering, compliance, cloud security, automation, DevSecOps, and
-        technical writing. I'm looking to apply my expertise to help
-        organizations stay secure and resilient in an evolving threat landscape.
+        Cybersecurity specialist focused on threat-driven defense and continuous security improvement. I take a hands on, ground up approach to learning and solving challenges. My skill set spans Incident Response, detection engineering, compliance, cloud security, automation, DevSecOps, and technical writing. On a mission to help organizations not just withstand, but outpace today’s complex and evolving cyber threat landscape.
       </p>
       <div className="flex justify-start mt-8 px-4 sm:px-8">
         <a
