@@ -42,13 +42,12 @@ const About = () => {
         </div>
       </div>
       <p className="sm:text-xl md:text-1xl sm:mt-0 px-4 sm:px-8 text-start">
-        A highly skilled, detail-oriented security professional with a knack for
-        understanding and improving technologies. I thrive on mastering evolving
-        tech and have a clear, concise communication style. I leverage my
-        expertise and education to drive organizational growth and resolve
-        client security concerns. I am seeking to bring my skills, amazing work
-        ethic, and excellence to drive success in my capacity as an experienced
-        Security analyst and Engineering skills to Amazon.
+        Cybersecurity specialist focused on threat-driven defense and continuous
+        security improvement. I take a hands on, ground up approach to learning
+        and solving challenges. My skill set spans threat hunting, detection
+        engineering, compliance, cloud security, automation, DevSecOps, and
+        technical writing. I'm looking to apply my expertise to help
+        organizations stay secure and resilient in an evolving threat landscape.
       </p>
       <div className="flex justify-start mt-8 px-4 sm:px-8">
         <a
