@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer class="">
       <div class="mx-auto w-full max-w-screen-xl">
-        <div class="px-4 py-6 bg-gray-100 dark:bg-gray-950 md:flex md:items-center md:justify-center gap-10">
+        <div class="px-4 py-6 bg-gray-100 dark:bg-gray-950 md:flex md:items-center md:justify-center sm:justify-center gap-10">
           <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
             © 2025 <a href="https://flowbite.com/">AYO DAVID™</a>. All Rights
             Reserved.

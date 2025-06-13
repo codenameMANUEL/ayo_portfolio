@@ -5,7 +5,7 @@ import Project from "./Projects"
 import Contact from './Contact'
 import Certificate from './Certificate'
 import Footer from './Footer'
-// import { LogoMarquee } from './components/LogoMarquee';
+import { LogoMarquee } from './components/LogoMarquee';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       <Hero/>
       <About/>
       <Project/>
-      {/* <LogoMarquee /> */}
+      <LogoMarquee />
       <Certificate/>
       <Contact/>
       <Footer/>
