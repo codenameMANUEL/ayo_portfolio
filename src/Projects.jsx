@@ -44,7 +44,7 @@ const Projects = () => {
         <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
           <h1 className="text-2xl font-semibold mb-2">Intern</h1>
           <h2 className="text-lg font-semibold mb-4">
-            Nigerian Communications Satellite Limited (NIGCOMSAT)
+            Network engineer Broadband services (Intern)
           </h2>
         </div>
       </main>
