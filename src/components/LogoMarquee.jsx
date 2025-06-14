@@ -1,4 +1,4 @@
-import { Logo } from './Logo';
+import { Logo } from '../components/Logo.jsx';
 // import { logos } from '../data/logos';
 import { logos } from '../data/logo';
 
@@ -26,7 +26,7 @@ export const LogoMarquee = ({
         )}
         
         <div className="relative w-full h-32 overflow-hidden group">
-          {/* Enhanced blur gradients */}
+          
           <div className="absolute left-0 top-0 z-10 w-32 h-full bg-gradient-to-r from-neutral-950 via-neutral-950/80 to-transparent" />
           <div className="absolute right-0 top-0 z-10 w-32 h-full bg-gradient-to-l from-neutral-950 via-neutral-950/80 to-transparent" />
           

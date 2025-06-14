@@ -50,7 +50,7 @@ const About = () => {
           download
           className="px-6 py-3 bg-pink-500 text-white font-semibold rounded-md shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300 ease-in-out"
         >
-          Download CV
+          Request For CV
         </a>
       </div>
       <div className="border-b border-gray-300 w-11/12 mx-auto pt-18"></div>

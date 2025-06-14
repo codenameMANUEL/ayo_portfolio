@@ -1,44 +1,48 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import "./App.css";
+import emailjs from "@emailjs/browser";
+import axios, { Axios } from "axios";
+import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [status, setStatus] = useState("");
+  const [clientName, setClientName] = useState("");
+  const [clientEmail, setClientEmail] = useState("");
+  const [clientMessage, setClientMessage] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
 
-    emailjs
-      .send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
-      )
-      .then(
-        () => {
-          setStatus("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setStatus(`Failed to send message: ${error.text}`);
-        }
+    // Emailjs service redentials
+    // const serviceID = "service_gdi6tyd";
+    // const publicKey = "_OVtw0c74DqHLrcyo";
+    // const templateID = "template_0b9z7sk";
+    const serviceID = "service_cgbpv0n";
+    const templateID = "template_0b9z7sk";
+    const publicKey = "zUAu9YRVrnqYbrqP8";
+
+    const data = {
+      service_id: serviceID,
+      template_id: templateID,
+      user_id: publicKey,
+      template_params: {
+        from_name: clientName,
+        from_email: clientEmail,
+        to_name: "emma developer",
+        message: clientMessage,
+      },
+    };
+    
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
       );
+      console.log(res.data);
+      setClientName("");
+      setClientEmail("");
+      setClientMessage("");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -53,6 +57,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
+
       <div className="flex flex-col items-center mt-8 px-4 sm:px-8">
         <form
           onSubmit={handleSubmit}
@@ -70,10 +75,10 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
+              // id="name"
+              // name="name"
+              value={clientName}
+              onChange={(e) => setClientName(e.target.value)}
               required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
               placeholder="Your Name"
@@ -88,10 +93,10 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              // id="email"
+              // name="email"
+              value={clientEmail}
+              onChange={(e) => setClientEmail(e.target.value)}
               required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
               placeholder="Your Email"
@@ -105,10 +110,10 @@ const Contact = () => {
               Message
             </label>
             <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
+              // id="message"
+              // name="message"
+              value={clientMessage}
+              onChange={(e) => setClientMessage(e.target.value)}
               required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
               rows="4"
@@ -121,15 +126,13 @@ const Contact = () => {
           >
             Send Message
           </button>
-          {status && (
+          {/* {status && (
             <p className="mt-4 text-center text-gray-600">{status}</p>
-          )}
+          )} */}
         </form>
       </div>
-      <div className="border-b border-gray-400 w-3/4 mx-auto pt-18"></div>
     </>
   );
 };
 
 export default Contact;
-
