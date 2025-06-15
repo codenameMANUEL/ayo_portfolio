@@ -43,93 +43,99 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="relative flex items-center justify-start h-56 sm:px-8">
-        <div className="relative inline-block">
-          <h2 className="text-7xl sm:text-8xl font-extrabold text-gray-200">
-            Contact
-          </h2>
-          <p className="text-xl sm:text-2xl font-semibold text-gray-900 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            Get in Touch
+  <>
+    <div className="relative flex items-center justify-start h-56 sm:px-8">
+      <div className="relative inline-block">
+        <h2 className="text-7xl sm:text-8xl font-extrabold text-gray-200">
+          Contact
+        </h2>
+        <p className="text-xl sm:text-2xl font-semibold text-gray-900 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          Get in Touch
+        </p>
+      </div>
+    </div>
+
+    {/* Side-by-side layout starts here */}
+    <div className="flex flex-col md:flex-row items-start justify-center gap-8 mt-12 px-4 sm:px-8">
+      
+      {/* Text Section */}
+      <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+          Let's Connect!
+        </h3>
+        <p className="text-gray-600 max-w-md mx-auto md:mx-0">
+          Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!
+        </p>
+        <div className="mt-4 max-w-md mx-auto md:mx-0">
+          <p className="text-gray-700">
+            I'm always interested in discussing research collaborations, job opportunities, or security-related topics! 📧{" "}
+            <span className="underline">Email Me Directly</span>
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-8 px-4 sm:px-8">
+      {/* Form Section */}
+      <div className="w-full md:w-1/2">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-md bg-white shadow-lg rounded-xl p-6 mb-6"
+          className="w-full bg-white shadow-lg rounded-xl p-6"
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
             Send Me a Message
           </h3>
+
+          {/* Name Field */}
           <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Name
-            </label>
+            <label className="block text-gray-700 font-medium mb-2">Name</label>
             <input
               type="text"
-              // id="name"
-              // name="name"
               value={clientName}
               onChange={(e) => setClientName(e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
               placeholder="Your Name"
             />
           </div>
+
+          {/* Email Field */}
           <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Email
-            </label>
+            <label className="block text-gray-700 font-medium mb-2">Email</label>
             <input
               type="email"
-              // id="email"
-              // name="email"
               value={clientEmail}
               onChange={(e) => setClientEmail(e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
               placeholder="Your Email"
             />
           </div>
+
+          {/* Message Field */}
           <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Message
-            </label>
+            <label className="block text-gray-700 font-medium mb-2">Message</label>
             <textarea
-              // id="message"
-              // name="message"
               value={clientMessage}
               onChange={(e) => setClientMessage(e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
               rows="4"
               placeholder="Your Message"
-            ></textarea>
+            />
           </div>
+
+          {/* Submit Button */}
           <button
             type="submit"
-            className="w-full px-6 py-3 bg-pink-500 text-white font-semibold rounded-xl shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300 ease-in-out"
+            className="w-full px-6 py-3 bg-pink-500 text-white font-semibold rounded-xl shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300"
           >
             Send Message
           </button>
-          {/* {status && (
-            <p className="mt-4 text-center text-gray-600">{status}</p>
-          )} */}
         </form>
       </div>
-    </>
-  );
+    </div>
+  </>
+);
+
 };
 
 export default Contact;
