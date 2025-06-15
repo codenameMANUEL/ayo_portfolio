@@ -1,6 +1,6 @@
 import "./App.css";
 import emailjs from "@emailjs/browser";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { useState } from "react";
 
 const Contact = () => {
@@ -12,12 +12,9 @@ const Contact = () => {
     e.preventDefault();
 
     // Emailjs service redentials
-    // const serviceID = "service_gdi6tyd";
-    // const publicKey = "_OVtw0c74DqHLrcyo";
-    // const templateID = "template_0b9z7sk";
-    const serviceID = "service_cgbpv0n";
-    const templateID = "template_0b9z7sk";
-    const publicKey = "zUAu9YRVrnqYbrqP8";
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const data = {
       service_id: serviceID,
@@ -26,11 +23,11 @@ const Contact = () => {
       template_params: {
         from_name: clientName,
         from_email: clientEmail,
-        to_name: "emma developer",
+        to_name: "David Ayo",
         message: clientMessage,
       },
     };
-    
+
     try {
       const res = await axios.post(
         "https://api.emailjs.com/api/v1.0/email/send",

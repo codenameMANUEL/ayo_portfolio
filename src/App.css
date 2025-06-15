@@ -40,6 +40,41 @@
   background-color: #db2777; /* Pink-600 */
   transform: scale(1.05);
 }
+
+/* Tailwind CSS imports */
+/* @keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 20s linear infinite;
+} */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+
 /* Tailwind CSS imports */
 
 /* @tailwind base;
