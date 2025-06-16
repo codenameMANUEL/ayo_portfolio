@@ -43,8 +43,8 @@ const Contact = () => {
   };
 
   return (
-  <>
-    <div className="relative flex items-center justify-start h-56 sm:px-8">
+  <section id="contact">
+    <div className="relative flex items-center justify-start py-12 px-4 sm:px-8">
       <div className="relative inline-block">
         <h2 className="text-7xl sm:text-8xl font-extrabold text-gray-200">
           Contact
@@ -133,7 +133,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-  </>
+  </section>
 );
 
 };

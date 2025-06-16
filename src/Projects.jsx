@@ -15,18 +15,18 @@ const Projects = () => {
       </div>
       <main className="flex-1 p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="relative overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
           <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
             <div className="trail"></div>
           </div>
           <h1 className="text-2xl font-semibold mb-2">
             Security Delivery Specialist
           </h1>
-          <h2 className="text-lg font-semibold mb-4">Accenture</h2>
+          <h2 className="text-md font-semibold mb-4">Accenture</h2>
         </div>
 
         {/* Card 2 */}
-        <div className="relative overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
           <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
             <div className="trail"></div>
           </div>
@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="relative overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
           <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
             <div className="trail"></div>
           </div>
@@ -48,7 +48,7 @@ const Projects = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="relative overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
           <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
             <div className="trail"></div>
           </div>
@@ -59,7 +59,7 @@ const Projects = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="relative overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
           <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
             <div className="trail"></div>
           </div>

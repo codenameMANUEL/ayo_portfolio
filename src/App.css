@@ -8,6 +8,10 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .message-form {
   width: 100%;
