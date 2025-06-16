@@ -1,3 +1,5 @@
+import "./App.css";
+
 const Projects = () => {
   return (
     <>
@@ -13,35 +15,54 @@ const Projects = () => {
       </div>
       <main className="flex-1 p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+          <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
+            <div className="trail"></div>
+          </div>
           <h1 className="text-2xl font-semibold mb-2">
             Security Delivery Specialist
           </h1>
           <h2 className="text-lg font-semibold mb-4">Accenture</h2>
         </div>
 
-        <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
+        {/* Card 2 */}
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+          <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
+            <div className="trail"></div>
+          </div>
           <h1 className="text-2xl font-semibold mb-2">
             Threat detection Engineer
           </h1>
           <h2 className="text-lg font-semibold mb-4">Wazuh Inc.</h2>
         </div>
 
-        <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
+        {/* Card 3 */}
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+          <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
+            <div className="trail"></div>
+          </div>
           <h1 className="text-2xl font-semibold mb-2">
             Senior Cybersecurity Analyst II
           </h1>
           <h2 className="text-lg font-semibold mb-4">CyberSOC Africa</h2>
         </div>
 
-        <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
+        {/* Card 4 */}
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+          <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
+            <div className="trail"></div>
+          </div>
           <h1 className="text-2xl font-semibold mb-2">
             Systems and Network Support Engineer
           </h1>
           <h2 className="text-lg font-semibold mb-4">AfriHUB ICT Institute</h2>
         </div>
 
-        <div className="bg-gray-300 border border-gray-700 rounded-xl p-6">
+        {/* Card 5 */}
+        <div className="relative z-20 overflow-hidden rounded-xl border border-pink-300 bg-gray-200 p-6">
+          <div className="absolute inset-0 z-[-1] rounded-xl bg-gray-200">
+            <div className="trail"></div>
+          </div>
           <h1 className="text-2xl font-semibold mb-2">
             Network engineer Broadband services
           </h1>

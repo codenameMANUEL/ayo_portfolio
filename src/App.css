@@ -89,3 +89,26 @@ body {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
 }
+
+
+/* trail */
+.trail {
+  width: 40px;
+  aspect-ratio: 8 / 1;
+  position: absolute;
+  background: radial-gradient(
+    100% 100% at right,
+    #ec4899,
+    transparent 50%
+  );
+  offset-path: border-box;
+  offset-anchor: 100% 50%;
+  animation: journey var(--speed, 10s) infinite linear;
+}
+
+@keyframes journey {
+  to {
+    offset-distance: 100%;
+  }
+}
+

@@ -44,10 +44,11 @@ import compTia from "./assets/certificate-svg/compTia.svg"; // Adjust the path a
 import powerUser from "./assets/certificate-svg/poweruser.svg"; // Adjust the path as necessary
 import splunk from "./assets/certificate-svg/splunk.svg"; // Adjust the path as necessary
 import blueTeam from "./assets/certificate-svg/ejptv2.svg"; // Adjust the path as necessary
+import CCD from "./assets/certificate-svg/CCD.svg"; // Adjust the path as necessary
 
 function Certificate() {
   // const images = Array(8).fill(ejptvSvg); // adjust count as needed
-  const images = [ejptvSvg, blueTeam, compTia, splunk, powerUser];
+  const images = [ejptvSvg, blueTeam, compTia, splunk, powerUser, CCD];
 
   return (
     <>
